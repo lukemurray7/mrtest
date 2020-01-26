@@ -74,4 +74,23 @@ const getRoverOutputs = (input) => {
   return roverOutputs.join('\n');
 };
 
-module.exports = getRoverOutputs;
+// module.exports = getRoverOutputs;
+
+const testInput = `5 5
+1 2 N
+LMLMLMLMM
+3 3 E
+MMRMMRMRRM`
+
+
+const testResult = getRoverOutputs(testInput);
+console.log(testResult);
+/**
+  result should be :
+  1 3 N
+  5 1 E
+
+
+  run node rover.js in terminal to test.
+ */
+
